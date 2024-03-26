@@ -1,7 +1,12 @@
+// A SwiftUI view that displays a menu of items in a list.
+//
+// Displays a list of MenuItem structs with a custom row separator and background color.
+// Images are resized to fit and rounded, text is bolded. Price is formatted with a dollar sign.
+
 import SwiftUI
 
 struct MenuView: View {
-
+    // A list of menu items to display in the menu
     var menuItems:[MenuItem] = [MenuItem(name: "Onigiri", price: "1.99", imageName: "onigiri"),
                                 MenuItem(name: "Meguro Sushi", price: "5.99", imageName: "meguro-sushi"),
                                 MenuItem(name: "Tako Sushi", price: "4.99", imageName: "tako-sushi"),
